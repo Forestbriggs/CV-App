@@ -2,9 +2,11 @@ export default function Name({ isEditing, firstName, lastName,
     setFirstName, setLastName }) {
     if (!isEditing) {
         return (
-            <h1>
-                {`${firstName} ${lastName}`}
-            </h1>
+            <div className="NameField">
+                <h2>
+                    {`${firstName} ${lastName}`}
+                </h2>
+            </div>
         )
     }
 

@@ -2,7 +2,7 @@ import Name from "./Name";
 import Contact from "./Contact";
 import '../styles/Form.css'
 
-export default function Form({ isEditing, firstName, setFirstName, lastName, setLastName, email, setEmail, phoneNumber, setPhoneNumber }) {
+export default function Form({ isEditing, firstName, setFirstName, lastName, setLastName, email, setEmail, phoneNumber, setPhoneNumber, address, setAddress }) {
     return (
         <form
             action=""
@@ -25,6 +25,8 @@ export default function Form({ isEditing, firstName, setFirstName, lastName, set
                         setEmail={setEmail}
                         phoneNumber={phoneNumber}
                         setPhoneNumber={setPhoneNumber}
+                        address={address}
+                        setAddress={setAddress}
                     />
                 </div>
                 <h2>Education</h2>

@@ -10,6 +10,7 @@ function App() {
     const [lastName, setLastName] = useState("Name");
     const [email, setEmail] = useState("your@email.com")
     const [phoneNumber, setPhoneNumber] = useState("111-111-1111");
+    const [address, setAddress] = useState("Your Address")
 
     function handleChange() {
         setIsEditing(!isEditing)
@@ -29,6 +30,8 @@ function App() {
                     setEmail={setEmail}
                     phoneNumber={phoneNumber}
                     setPhoneNumber={setPhoneNumber}
+                    address={address}
+                    setAddress={setAddress}
                 />
                 <div className='Education'>
 
@@ -51,6 +54,7 @@ function App() {
                 lastName={lastName}
                 email={email}
                 phoneNumber={phoneNumber}
+                address={address}
             />
             <div className='ButtonContainer'>
                 <Button isEditing={isEditing} handleChange={handleChange} />

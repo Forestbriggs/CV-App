@@ -1,11 +1,12 @@
 import { Validator } from "react"
 
-export default function Contact({ isEditing, email, setEmail, phoneNumber, setPhoneNumber }) {
+export default function Contact({ isEditing, email, setEmail, phoneNumber, setPhoneNumber, address, setAddress }) {
     if (!isEditing) {
         return (
             <div className="ContactInfo">
-                <h1>{email}</h1>
-                <h1>{phoneNumber}</h1>
+                <p>{email}</p>
+                <p>{phoneNumber}</p>
+                <p>{address}</p>
             </div>
         )
     }
@@ -26,6 +27,14 @@ export default function Contact({ isEditing, email, setEmail, phoneNumber, setPh
                     type="phone"
                     value={phoneNumber}
                     onChange={(event) => setPhoneNumber(event.target.value)}
+                />
+            </div>
+            <div>
+                <label>Address</label>
+                <input
+                    type="text"
+                    value={address}
+                    onChange={(event) => setAddress(event.target.value)}
                 />
             </div>
         </div>

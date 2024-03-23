@@ -1,0 +1,30 @@
+.CV {
+    border: 1px solid white;
+    height: 46vw;
+    width: 32.5vw;
+    margin-bottom: 15px;
+}
+
+header {
+    border-bottom: 1px solid white;
+}
+
+.NameField {
+    position: relative;
+    left: 5%;
+    border-bottom: 1px solid grey;
+    width: 90%;
+}
+
+.ContactInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ContactInfo>p:nth-child(2) {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding: 5px 20px;
+
+}
