@@ -21,6 +21,7 @@ function App() {
         return (
             <>
                 <Form
+                    type="general"
                     isEditing={isEditing}
                     firstName={firstName}
                     lastName={lastName}
@@ -33,9 +34,9 @@ function App() {
                     address={address}
                     setAddress={setAddress}
                 />
-                <div className='Education'>
-
-                </div>
+                <Form
+                    type="education"
+                />
                 <div className='Experience'>
 
                 </div>
