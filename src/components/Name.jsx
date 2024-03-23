@@ -10,16 +10,22 @@ export default function Name({ isEditing, firstName, lastName,
 
     return (
         <div className="NameFields">
-            <input
-                type="text"
-                value={firstName}
-                onChange={(event) => setFirstName(event.target.value)}
-            />
-            <input
-                type="text"
-                value={lastName}
-                onChange={(event) => setLastName(event.target.value)}
-            />
+            <div>
+                <lable>First Name</lable>
+                <input
+                    type="text"
+                    value={firstName}
+                    onChange={(event) => setFirstName(event.target.value)}
+                />
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input
+                    type="text"
+                    value={lastName}
+                    onChange={(event) => setLastName(event.target.value)}
+                />
+            </div>
         </div>
     )
 };

@@ -11,17 +11,23 @@ export default function Contact({ isEditing, email, setEmail, phoneNumber, setPh
     }
 
     return (
-        <div>
-            <input
-                type="email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-            />
-            <input
-                type="phone"
-                value={phoneNumber}
-                onChange={(event) => setPhoneNumber(event.target.value)}
-            />
+        <div className="ContactFields">
+            <div>
+                <label>Email</label>
+                <input
+                    type="email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                />
+            </div>
+            <div>
+                <label>Phone Number</label>
+                <input
+                    type="phone"
+                    value={phoneNumber}
+                    onChange={(event) => setPhoneNumber(event.target.value)}
+                />
+            </div>
         </div>
     )
 }

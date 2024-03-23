@@ -1,5 +1,6 @@
 import Name from "./Name";
 import Contact from "./Contact";
+import '../styles/CV.css'
 
 export default function CV({ isEditing, firstName, lastName, email, phoneNumber }) {
     return (

@@ -2,8 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import Form from './components/Form';
 import CV from './components/CV'
-// import Name from './components/Name';
-// import Contact from './components/Contact';
 import Button from './components/Button'
 
 function App() {
