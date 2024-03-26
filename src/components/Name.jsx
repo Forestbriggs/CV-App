@@ -13,7 +13,7 @@ export default function Name({ isEditing, firstName, lastName,
     return (
         <div className="NameFields">
             <div>
-                <lable>First Name</lable>
+                <label>First Name</label>
                 <input
                     type="text"
                     value={firstName}

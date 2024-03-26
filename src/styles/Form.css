@@ -3,7 +3,7 @@ form {
     border-radius: .5em;
     padding: 1em;
     width: 40vw;
-    height: 40vh;
+    height: max-content;
     margin-bottom: 15px;
 }
 

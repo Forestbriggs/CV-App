@@ -1,0 +1,9 @@
+.card {
+    border: 1px solid white;
+    border-radius: 1em;
+    /* margin: 0 10px; */
+}
+
+.card:not(:last-of-type) {
+    margin-bottom: 10px;
+}
